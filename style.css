@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    color: white;
+    padding: 20px;
+}
+nav {
+    background-color: rgb(70, 111, 223);
+    padding: 2px;
+    position: sticky;
+    box-shadow: 1px 4px 4px 1px rgb(141, 139, 139);
+}
+
+nav li , nav li:visited {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+nav li:after, nav li:visited:after{
+    content: '';
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: white;
+    transition: 0.3s;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav li:hover:after,nav li:visited:hover:after {
+    width: 100%;
+}
+
+.jumbotron {
+    padding: 10px;
+    text-transform: uppercase;
+    background-image: url("images/smansa.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    box-shadow: 3px 3px 3px 3px rgb(141, 139, 139);
+    font-family: inherit;
+    color: black;
+    font-size: x-large;
+}
+.jumbotron hr {
+    float: left;
+    width: 400px;
+    max-width: 100%;
+    height: 10px;
+    background-color: blue;
+    border: black;
+    box-shadow: 1px 2px 2px 1px black;
+}
+
+.profil {
+    width: 15em;
+    border-radius: 18px;
+    box-shadow: 8px 8px 5px #444;
+    padding: 8px 12px;
+    background-color:  rgb(70, 111, 223);
+    opacity: 86%;
+    display: none;
+    position: absolute;
+    margin: 10px;
+    
+    
+}
+.box {
+    
+    width: 40px;
+    height: 100px;
+}
+.box img {
+    height: 100px;
+    border-radius: 300px;
+    margin-left: 75px;
+}
+.visimisi {
+    display: block;
+    grid-template-columns: 50% auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 70px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(17, 17, 17, 0.2);
+}
+
+.dftr {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dftr:hover {
+    box-shadow: 0 8px 16px 0 rgba(17, 17, 17, 0.2);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+footer img {
+    height: 250px;
+    max-width: 100%;
+}
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+@media only screen and (min-width: 320px) {
+    
+    nav li {
+        display: inline-flex;
+        padding: 10px;
+    }
+    .card {
+        width: 300px;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    .visimisi {
+        display: grid;
+    }
+
+    .card{
+        width: 70%;
+    }
+    .dftr {
+        width: 400px;
+    }
+}
